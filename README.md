@@ -48,37 +48,38 @@ We use the beacon proxy pattern. This provides the flexibility for the owner to 
 - Script 14 closes the campaign and sweeps the existing funds in the claimdrop contract to the owner
 
 
+# Address and Transaction Hashes on Mantra
 Addresses deployed on Mantra Testnet are available at: ./addresses.json
 
+## transaction hashes
+1) createCampaign transaction hash - 0x32cd1065ca4446eaf5cb09bf2719205113406a2e70a3aa2b9ba9cfcd8bf2d00b
 
-createCampaign transaction hash - 0x32cd1065ca4446eaf5cb09bf2719205113406a2e70a3aa2b9ba9cfcd8bf2d00b
-
-batchupload transaction hash - 
+2) batchupload transaction hash - 
 0xbf5d13a5aae562b443f413d4e7992a8fa032df3e416bdd13eb35037b61378e29
 
-claim transaction hash - 
+3) claim transaction hash - 
 0x822b77ade190c08f6703901868ba55cfb6144c7ce96fd0b23ccfe326b5a45c30
 
-address replacement hash -
+4) address replacement hash -
 0x4423f6df76c894dad2eaa12dc9e40d68258f6cf6dfbfdee8ea82a808f36562ca
 
-blacklisting transaction hash - 
+5) blacklisting transaction hash - 
 0x2b22681394c97b32589d470f6f789d227762ca91c5e7d9f57375b97e165c6e02
 
-unblacklist (remove blacklist) transaction hash -
+6) unblacklist (remove blacklist) transaction hash -
 0x27f16cbe3a925322a452e2d2325c200fa83133ef34a11d1892e188e4ac0a17d3
 
-authorise wallets transaction hash -
+7) authorise wallets transaction hash -
 0x997885625f05db606790aa20c896780a4cd6a691e85f8d50a86d90e40fc9b5a3
 
-closing campaign transaction hash - 
+8) closing campaign transaction hash - 
 check from the following address: 0xbBD32a1fd5c95E4Db0e7a568b88BaC5D1564Fc6d
 After closing the campaign the owner/deployer's token balance increased.
 
-proposing new ownership transaction hash -
+9) proposing new ownership transaction hash -
 0xe43f070df1f9c89dedf8edb0148d828894b88ed39e1e8faea04ca418471c6ed9
 
-accept new ownership transaction hash -
+10) accept new ownership transaction hash -
 0x7c8208aaaad707f0c03e1484604a795bcfabd7f657cb5178629316eea8f051d7
 
 # Future Work:
