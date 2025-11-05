@@ -1,6 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("@openzeppelin/hardhat-upgrades");
 
+require('dotenv').config();
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
@@ -26,5 +27,16 @@ module.exports = {
         }
       }
     ]
+  },
+   networks: {
+    localhost: {
+      url: 'http://127.0.0.1:8545',
+      chainId: 31337
+    },
+    mantra: {
+        url: process.env.MANTRA_URL || '',
+        accounts: [process.env.PRIVATE_KEY1, process.env.PRIVATE_KEY2, process.env.PRIVATE_KEY3, process.env.PRIVATE_KEY4],
+        chainId: Number(process.env.MANTRA_CHAIN_ID)
+    }
   }
 };

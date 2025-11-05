@@ -23,7 +23,7 @@ async function main() {
   const tx = await contract.connect(user2).claim(await user2.getAddress(), 0);
   console.log("tx hash:", tx.hash);
   const receipt = await tx.wait();
-  console.log("Claim confirmed in block", receipt.blockNumber);
+  console.log("Claim confirmed in block", receipt);
 }
 
 main().catch((err) => {

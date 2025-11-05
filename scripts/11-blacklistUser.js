@@ -17,9 +17,9 @@ async function main() {
   const contract = await MantraClaimDropV2.attach(proxyAddress);
 
   // Replace these addresses with the actual ones you want to use
-  const wallet = "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc"; // Replace with new wallet address
+  const wallet = "0x2f6dd239973702b0525118faca9c4eacb9d595d8"; // Replace with new wallet address
 
-  console.log(`Removing address ${wallet}...`);
+  console.log(`Blacklisting address ${wallet}...`);
 
   // Call remove function
   const tx = await contract.connect(deployer).blacklistAddress(wallet, false);

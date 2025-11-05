@@ -16,8 +16,8 @@ async function main() {
   const contract = await MantraClaimDropV2.attach(proxyAddress);
 
   // Replace these addresses with the actual ones you want to use
-  const oldWallet = "0x90f79bf6eb2c4f870365e785982e1f101e93b906"; // Replace with old wallet address
-  const newWallet = "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65"; // Replace with new wallet address
+  const oldWallet = "0xd8b587e201554cf9bb5c02c71f4586f4d16d63c7"; // Replace with old wallet address
+  const newWallet = "0xbBD32a1fd5c95E4Db0e7a568b88BaC5D1564Fc6d"; // Replace with new wallet address
 
   console.log(`Replacing address ${oldWallet} with ${newWallet}...`);
 

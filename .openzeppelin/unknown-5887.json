@@ -1,0 +1,432 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xDf903d173a248AcAdBa5e6939053770d7A4d130E",
+      "txHash": "0x7433a4e40a9f39257b39c5ec8ae7e627045565656f7ced4b8be85520ab5c764e",
+      "kind": "beacon"
+    }
+  ],
+  "impls": {
+    "bf663eb40aa12b7fbac6ec5acc083a7f2b455bb1c3ee581630169e03a30da869": {
+      "address": "0x33830Fd9f7FE128Eb71A2903255C38BB4058b6D3",
+      "txHash": "0x1ceb8439315220f6687ad814a6c3e8f0d2043572c3503e8be85577108b3c07e9",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)22_storage)",
+            "contract": "AccessControl",
+            "src": "@openzeppelin\\contracts\\access\\AccessControl.sol:55"
+          },
+          {
+            "label": "_roleMembers",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_bytes32,t_struct(AddressSet)6738_storage)",
+            "contract": "AccessControlEnumerable",
+            "src": "@openzeppelin\\contracts\\access\\extensions\\AccessControlEnumerable.sol:17"
+          },
+          {
+            "label": "campaign",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_struct(Campaign)11106_storage",
+            "contract": "MantraAdmin",
+            "src": "contracts\\MantraAdmin.sol:10"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_address",
+            "contract": "MantraAdmin",
+            "src": "contracts\\MantraAdmin.sol:12"
+          },
+          {
+            "label": "pendingOwner",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_address",
+            "contract": "MantraAdmin",
+            "src": "contracts\\MantraAdmin.sol:13"
+          },
+          {
+            "label": "ownershipExpiry",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_uint256",
+            "contract": "MantraAdmin",
+            "src": "contracts\\MantraAdmin.sol:14"
+          },
+          {
+            "label": "blacklisted",
+            "offset": 0,
+            "slot": "14",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "MantraAdmin",
+            "src": "contracts\\MantraAdmin.sol:15"
+          },
+          {
+            "label": "totalClaimed",
+            "offset": 0,
+            "slot": "15",
+            "type": "t_uint256",
+            "contract": "MantraClaimDropV2",
+            "src": "contracts\\MantraClaimDropV2.sol:14"
+          },
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "16",
+            "type": "t_bool",
+            "contract": "MantraClaimDropV2",
+            "src": "contracts\\MantraClaimDropV2.sol:16"
+          },
+          {
+            "label": "claimed",
+            "offset": 0,
+            "slot": "17",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "MantraClaimDropV2",
+            "src": "contracts\\MantraClaimDropV2.sol:18"
+          },
+          {
+            "label": "claimedAmounts",
+            "offset": 0,
+            "slot": "18",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "MantraClaimDropV2",
+            "src": "contracts\\MantraClaimDropV2.sol:20"
+          },
+          {
+            "label": "rewards",
+            "offset": 0,
+            "slot": "19",
+            "type": "t_mapping(t_address,t_struct(Rewards)11137_storage)",
+            "contract": "MantraClaimDropV2",
+            "src": "contracts\\MantraClaimDropV2.sol:22"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Allocation)11079_storage)dyn_storage": {
+            "label": "struct IMantraClaimDropV2.Allocation[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Distribution)11074_storage)dyn_storage": {
+            "label": "struct IMantraClaimDropV2.Distribution[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(Rewards)11137_storage)": {
+            "label": "mapping(address => struct IMantraClaimDropV2.Rewards)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(AddressSet)6738_storage)": {
+            "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)22_storage)": {
+            "label": "mapping(bytes32 => struct AccessControl.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AddressSet)6738_storage": {
+            "label": "struct EnumerableSet.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)6252_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Allocation)11079_storage": {
+            "label": "struct IMantraClaimDropV2.Allocation",
+            "members": [
+              {
+                "label": "wallet",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Available)11127_storage": {
+            "label": "struct IMantraClaimDropV2.Available",
+            "members": [
+              {
+                "label": "denom",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Campaign)11106_storage": {
+            "label": "struct IMantraClaimDropV2.Campaign",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "typeLabel",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "rewardDenom",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "rewardTokenAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "distributions",
+                "type": "t_array(t_struct(Distribution)11074_storage)dyn_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "allocations",
+                "type": "t_array(t_struct(Allocation)11079_storage)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "endTime",
+                "type": "t_uint64",
+                "offset": 8,
+                "slot": "8"
+              },
+              {
+                "label": "exists",
+                "type": "t_bool",
+                "offset": 16,
+                "slot": "8"
+              }
+            ],
+            "numberOfBytes": "288"
+          },
+          "t_struct(Claimed)11117_storage": {
+            "label": "struct IMantraClaimDropV2.Claimed",
+            "members": [
+              {
+                "label": "denom",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Distribution)11074_storage": {
+            "label": "struct IMantraClaimDropV2.Distribution",
+            "members": [
+              {
+                "label": "kind",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "percentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "start",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "end",
+                "type": "t_uint64",
+                "offset": 8,
+                "slot": "2"
+              },
+              {
+                "label": "cliff",
+                "type": "t_uint64",
+                "offset": 16,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Pending)11122_storage": {
+            "label": "struct IMantraClaimDropV2.Pending",
+            "members": [
+              {
+                "label": "denom",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Rewards)11137_storage": {
+            "label": "struct IMantraClaimDropV2.Rewards",
+            "members": [
+              {
+                "label": "claim",
+                "type": "t_struct(Claimed)11117_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "pending",
+                "type": "t_struct(Pending)11122_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "available",
+                "type": "t_struct(Available)11127_storage",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(RoleData)22_storage": {
+            "label": "struct AccessControl.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Set)6252_storage": {
+            "label": "struct EnumerableSet.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_positions",
+                "type": "t_mapping(t_bytes32,t_uint256)",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}

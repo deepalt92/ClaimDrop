@@ -66,8 +66,9 @@ async function main() {
     }
   ];
 
-  await MantraClaimDropV2.connect(deployer).manageCampaign(action[0]);
-  console.log("Initial campaign created via manageCampaign");
+  const tx = await MantraClaimDropV2.connect(deployer).manageCampaign(action[0]);
+  const receipt = await tx.wait();
+  console.log("Initial campaign created via manageCampaign", receipt);
 
 }
 
